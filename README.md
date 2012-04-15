@@ -1,7 +1,7 @@
 咖啡兔
 =======
 
-博客源码：[http://www.kafeitu.me](http://www.kafeitu.me)
+博客源码：[git@github.com:gnucode2012/gnucode2012.github.com.git]()
 
 使用Github+Jekyll+Markdown。
 
