@@ -5,10 +5,6 @@ layout: master
 
 h2. 关于我
 
-* 目前在一家创业型公司工作，工作内容：需求调研、DEMO、数据库、架构、测试以及核心模块开发工作
-
-* 擅长B/S系统开发，使用技术：Java及其(SS、SSH2)架构、Ajax(jQuery)、Xhtml、Css；CAS、Spring Security
-
 * 喜欢*nix、开源
 
 h2. 软硬环境
@@ -23,32 +19,21 @@ h2. 软硬环境
 
 * 浏览器：Firefox(开发)、Chrome
 
-* 笔记本：HP 6520s，CPU：T9300 2.5G，内存：6G，硬盘：500G
+* 笔记本：
 
-h2. 关于www.kafeitu.me
+h2. 关于
 
-* 介绍业内流行、成熟的技术、工具、敏捷
-
-* 以xhtml、css、javascript、ajax、jQuery为前端技术
-
-* 以Java、SSH、Springside为后台基础
-
-* 以Maven、Ant、CI(Jenkins)、Sonar为辅助工具
-
-* 以技术的实用性为导向，结合实例讲解各个系统、功能的实现过程
-
-* 以资源共享的方式分享给广大的BS架构的开发人员以提高个人水平
+* To Be Continue....
 
 h2. 联系我
 
-* QQ：576525789
-* MSN、Email：yanhonglei[@]gmail.com
-* Weibo: <a href='http://weibo.com/kafeituzi'>@kafeituzi</a>
-* Blog: <a href='http://www.kafeitu.me'>http://www.kafeitu.me</a>
+* Email：leafroot2008[@]gmail.com
+* Weibo: <a href='http://weibo.com/leafroot'>@leafroot_BH4RYM</a>
+* Blog: <a href='http://gnucode2012.github.com'>http://gnucode2012.github.com</a>
 
 h2. Github项目
 
-* <a href='https://github.com/henryyan'>https://github.com/henryyan</a>
+* <a href='https://github.com/gnucode2012'>https://github.com/gnucode2012</a>
 
 h2. 关于版权
 

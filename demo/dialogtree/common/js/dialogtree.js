@@ -2,7 +2,7 @@
  * dialogtree.js
  * @category   javascript
  * @package    jquery
- * @author     HenryYan <yanhonglei@gmail.com>
+ * @author     leafroot <leafroot2008@gmail.com>
  * @version    1.0
  */ 
 var DialogTree = function(options) {
