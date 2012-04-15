@@ -1,11 +1,120 @@
-<!doctype html>
-<html>
-<head>
-<title>Hello</title>
-</head>
+---
+layout: master
+title: 咖啡兔
+full_posts: 3
+---
 
-<body>
-<h1>Hello!</h1>
-</body>
-</html>
+<div class='home-box' id='home-left'>
+  <h2><a href='atom.xml' class='float-right'
+      ><img src='/images/subscribe-icon.gif' alt='Subscribe'/></a
+      >最新博客（<a href='/blog.html'>更多</a>）</h2>
+  
+{% for post in site.posts limit:page.full_posts %}
+  <div class='post'>
+    <span class='date'>{{post.date | date_to_string}}</span>
 
+<!-- JiaThis Button BEGIN -->
+<div id="ckepop" style="padding-top:.7em;"><span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_tsina"></a>
+<a class="jiathis_button_tqq"></a>
+<a class="jiathis_button_douban"></a>
+<a class="jiathis_button_googleplus"></a>
+<a class="jiathis_button_evernote"></a>
+<a class="jiathis_button_ujian"></a>
+<a class="jiathis_button_fav"></a>
+<a class="jiathis_button_copy"></a>
+<a class="jiathis_button_ishare"></a>
+<a href="http://www.jiathis.com/share?uid=1537991" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+  data_track_clickback:true,
+  url:'http://www.kafeitu.me{{post.url}}',
+  summary:'',
+  title:"咖啡兔 - {{post.title}} - HenryYan",
+  ralateuid:{
+    "tsina":"kafeituzi"
+  },
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v2.jiathis.com/code/jia.js?uid=1537991" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+    <a href='{{post.url}}#comments' title='分享文章、查看评论' style="margin-left: 1em;">Comments</a>
+    <h1><a href='{{post.url}}'>{{post.title}}</a></h1>
+    <div class='body'>{{post.content}}</div>
+    
+  </div>
+{% endfor %}
+
+</div>
+
+<div class='home-box' id='home-right'>
+  <h2>博客公告</h2>
+  <div class='sidebar'>
+    <div class="sidebar-item">
+      <div id="cse" style="width: 100%;">Loading Google Search</div>
+      <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+      <script type="text/javascript"> 
+        google.load('search', '1', {language : 'zh-CN', style : google.loader.themes.V2_DEFAULT});
+        google.setOnLoadCallback(function() {
+          var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
+            '008448290842185643507:htbcp2-now4', customSearchOptions);
+          customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+          customSearchControl.draw('cse');
+        }, true);
+      </script>
+      <ul style="margin-top: -3px">
+        <li>QQ：576525789</li>
+        <li>Git中文群：23541011</li>
+        <li>Maven中文群：55170521</li>
+        <li>jQuery交流群：23539326</li>
+        <li>Jenkins中文群：22151234</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>最新文章</h2>
+  <div class='sidebar'>
+    <div class="sidebar-item">
+    <ul class='sidebar-posts'>
+      {% for post in site.posts limit:5 %}
+      <li title='发布日期：{{post.date | date_to_string}}'><a href='{{post.url}}'>{{post.title}}</a></li>
+      {% endfor %}
+    </ul>
+    </div>
+  </div>
+
+  <h2>近期计划</h2>
+  <div class='sidebar'>
+    <div class="sidebar-item">
+    <ul>
+      <li>CAS升级篇，和spring security整合</li>
+      <li>Git GUI增强工具SmartGit</li>
+	  <li>附件插件：jquery.attachment.js</li>
+    </ul>
+    </div>
+  </div>
+
+  <h2>联系方式</h2>
+  <div class='sidebar'>
+    <div class="sidebar-item">
+    <ul>
+      <li>邮件：yanhonglei[@]gmail.com</li>
+      <li>QQ ：576525789</li>
+      <li>微博：<a href="http://weibo.com/kafeituzi" target="_blank">@kafeituzi</a></li>
+      <li>豆瓣：<a href="http://book.douban.com/people/kafeitu/" target="_blank">kafeitu</a></li>
+    </ul>
+    </div>
+  </div>
+
+  <h2>微博</h2>
+  <div class='sidebar'>
+    <div class="sidebar-item">
+		<iframe width="245" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=245&height=550&fansRow=2&ptype=1&speed=0&skin=3&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=1883607704&verifier=4b99344e&dpc=1"></iframe>
+    </div>
+  </div>
+
+</div>
